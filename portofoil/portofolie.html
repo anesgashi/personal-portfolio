@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Personal Portfolioe</title>
+
+</head>
+<body>
+<div class="menudiv">
+    <ul>
+        <li><a href="#profile"><i class="material-icons">&#xe88a;</i></a></li>
+        <li><a href="#skills"><i class="material-icons">format_list_bulleted</i></a></li>
+        <li><a href="#project"><i class="material-icons">folder</i></a></li>
+        <li><a href="#contact"><i class="material-icons">contact_mail</i></a></li>
+        <li><a onclick="myFunction()"><i id="theme-icon" class="fa fa-moon-o"></i></a></li>
+    </ul>
+</div>  
+<div id="profile"></div>
+    <div class="wrapper">
+        <div class="flex-container">
+            <div class="left-column">
+                <div class="profile">
+                    <img src="non.jpg" alt="Profile Picture">
+        <p class="name">Anes Gashi</p>
+
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="div2">
+                        <div class="intro" id="intro-text"></div>
+
+                </div>
+                <div class="div3">
+                    <p class="contactbtn">Per te na kontaktuar shtyp buttonin "Contact Us"</p>
+                   <div class="wrapper1">
+                        <a href="#contact" class="btn1">Contact Us</a>
+                   </div>
+                </div>
+<div class="div4">
+    <p class="info">Na ndiqni në rrjete sociale:</p>
+    <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Linkedin</li>
+        <li>Instagram</li>
+    </ul>
+    <!-- Vendos social-icons në një div brenda prindit dhe përdor një klasë të veçantë -->
+    <div class="social-container">
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills"></div>
+
+    <h1 class="title" id="skills">SKILLS</h1>
+    <hr class="hr1"><br>
+<div class="skillside">
+    <div class="skillstitle1">HTML</div>
+    <div class="skillsdiv">I know HTML very well.</div>
+    <div class="skillstitle1">CSS</div>
+    <div class="skillsdiv">I am still practicing CSS.</div>
+    <div class="skillstitle1">JAVASCRIPT</div>
+    <div class="skillsdiv">In the near future, I will start learning JavaScript and other languages.</div>
+</div>
+<div id="project"></div>
+
+<h1 class="title" id="project">Project</h1>
+<hr class="hr1">
+
+<div class="projectside">
+<div class="row">
+    <div class="container">
+  <div class="column">
+    <div class="card">
+     <img src="non.jpg">
+       <div class="overlay">
+               <button class="photobutton">View Demo</button>
+
+       </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+  <div class="column">
+    <div class="card">
+     <img src="non.jpg">
+       <div class="overlay">
+               <button class="photobutton">View Demo</button>
+
+       </div>
+
+    </div>
+  </div>
+</div>
+  
+    <div class="container">
+  <div class="column">
+    <div class="card">
+     <img src="non.jpg">
+       <div class="overlay">
+               <button class="photobutton">View Demo</button>
+
+       </div>
+
+    </div>
+  </div>
+</div>
+  
+    <div class="container">
+  <div class="column">
+    <div class="card">
+     <img src="non.jpg">
+       <div class="overlay">
+               <button class="photobutton">View Demo</button>
+
+       </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+  <div class="column">
+    <div class="card">
+     <img src="non.jpg">
+       <div class="overlay">
+               <button class="photobutton">View Demo</button>
+
+       </div>
+
+    </div>
+  </div>
+</div>
+    <div class="container">
+  <div class="column">
+    <div class="card">
+     <img src="non.jpg">
+       <div class="overlay">
+               <button class="photobutton">View Demo</button>
+
+       </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+<div id="contact"></div>
+    <h1 class="title" id="skills">Contact Us</h1>
+    <hr class="hr1"><br>
+<div class="contactdiv">
+  
+  <h1 class="titlecontact"  id="contact">Contact Us</h1>
+
+  <p class="pcontact">CONTACT INFO:<a href="mailto:anesgashi06@outlook.com" class="acolor">anesgashi06@outlook.com</a></p>
+<form>
+  <input type="text" id="name" name="name" placeholder="Name" required>
+
+  <input type="text" id="email" name="email" placeholder="Email" required>
+
+  <input type="text" id="subject" name="subject" placeholder="Subject" style="height:200px" required>
+
+  <input type="submit" value="Send">
+</form>
+
+</div>
+</div>
+<div class="infoalert">
+    <strong class="info-title">Info:</strong> Copyright © 2024 by Anes Gashi. All rights reserved. <br>
+    This website was created using HTML, CSS, and JavaScript. <br>
+    Available in English.
+</div>
+
+
+</body>
+
+
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+
+        // Ndrysho ikonën kur aktivizohet dark mode
+        var icon = document.getElementById("theme-icon");
+        if (element.classList.contains("dark-mode")) {
+            icon.classList.remove("fa-moon-o");
+            icon.classList.add("fa-sun-o");
+        } else {
+            icon.classList.remove("fa-sun-o");
+            icon.classList.add("fa-moon-o");
+        }
+    }
+</script>
+
+
+<script>
+    const introElement = document.getElementById("intro-text");
+    const text1 = "Hello, my name is Anes Gashi";
+    const text2 = "I'm trying to be the best web developer.";
+    const text3 = "Thanks for watching my project.";
+    const text4 = "Good pass with love Anes Gashi <3.";
+    let index = 0;
+
+    // Funksioni për të shtuar shkronjat një nga një
+    function typeText(text, callback) {
+        if (index < text.length) {
+            introElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(() => typeText(text, callback), 100); // Koha mes shkronjave
+        } else {
+            index = 0; // Rikthe indeksin
+            if (callback) setTimeout(callback, 1000); // Pauzë para se të kalohet te teksti i dytë
+        }
+    }
+
+    // Funksioni për të fshirë shkronjat një nga një
+    function deleteText(callback) {
+        if (index < introElement.innerHTML.length) {
+            introElement.innerHTML = introElement.innerHTML.slice(0, -1);
+            setTimeout(() => deleteText(callback), 50); // Koha mes fshirjes së shkronjave
+        } else {
+            index = 0; // Rikthe indeksin për tekstin tjetër
+            if (callback) callback();
+        }
+    }
+
+    // Fillon me tekstin e parë, fshin, dhe pastaj shton tekstin e dytë
+    typeText(text1, () => {
+        deleteText(() => {
+            typeText(text2, () => {
+                deleteText(() => {
+                    typeText(text3, () => {
+                        deleteText(() => {
+                            typeText(text4);
+                        });
+                    })
+                       ;
+                });
+            });
+        });
+    });
+</script>
+
+    </script>
+</html>
